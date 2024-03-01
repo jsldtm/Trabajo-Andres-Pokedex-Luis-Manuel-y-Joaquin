@@ -1,0 +1,205 @@
+body {
+
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #contenedor-grande { /* Added styles for the new container */
+    display: flex;
+    width: 100%; /* Full width */
+    height: 107vh;
+    max-width: 800px;
+    background-color: rgb(116, 36, 14); /* Yellow background */
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin-left: 40px; /* Added margin to elements within #contenedor-grande */
+    margin-top: 30px; /* Added margin to elements within #contenedor-grande */
+  }
+  
+  #contenedor-principal {
+    display: flex; /* Maintains flexbox */
+  }
+  
+  #pokedex {
+    flex: 1;
+    width: calc(2 * 500px / 3); /* Ajusta el ancho a 2/3 del original */
+    max-width: 466px;
+    margin: 20px auto;
+    border: 1px solid #e81919;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(137, 84, 84, 0.2);
+    background-color: rgb(185, 18, 18);
+    margin-left: 10px; /* Added margin */
+  }
+  
+  .pokemon-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Center the image vertically in the container */
+  #imagen-pokemon {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+  }
+  
+  .imagen-pokemon img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+
+  }
+  
+  .pokemon-info {
+    width: 100%;
+  }
+  
+  .pokemon-info h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .pokemon-info p {
+    margin-bottom: 10px;
+  }
+  
+  .pokemon-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pokemon-info ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  #left-button,
+  #right-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #caja-derecha {
+    flex: 0.5; /* Set to take half the remaining space */
+    margin: 20px; /* Adjust margin */
+    max-width: 466px;
+    border: 1px solid #e81919;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(137, 84, 84, 0.2);
+    background-color: rgb(185, 18, 18);
+  }
+  
+  #left-button {
+    left: 10px;
+  }
+  
+  #right-button {
+    right: 10px;
+  }
+
+  #miniTopcircle-one {
+    width: 22.5px;
+    height: 22.5px; /* Adjust height as needed */
+    background-color: rgb(255, 0, 0);
+    border-color: #000000;
+    border-radius: 50%;
+    margin: 20 auto; /* Center horizontally */
+    margin-top: 7px;
+    margin-left: 40px;
+  }
+
+  #miniTopcircle-dos {
+    width: 22.5px;
+    height: 22.5px; /* Adjust height as needed */
+    background-color: rgb(255, 247, 0);
+    border-color: #000000;
+    border-radius: 50%;
+    margin: 20 auto; /* Center horizontally */
+    margin-top: 7px;
+    margin-left: 40px;
+  }
+
+  #miniTopcircle-tres {
+    width: 22.5px;
+    height: 22.5px; /* Adjust height as needed */
+    background-color: rgb(9, 255, 0);
+    border-color: #000000;
+    border-radius: 50%;
+    margin: 20 auto; /* Center horizontally */
+    margin-top: 7px;
+    margin-left: 40px;
+  }
+
+  #circle-top {
+    width: 32.5px;
+    height: 32.5px; /* Adjust height as needed */
+    background-color: rgb(18, 188, 235);
+    border-radius: 50%;
+    margin: 2 auto; /* Center horizontally */
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+#circle-bottom {
+  width: 30px;
+  height: 30px; /* Adjust height as needed */
+  background-color: blue;
+  border-radius: 50%;
+  margin: 20 auto; /* Center horizontally */
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+.mini-circle {
+    width: 22.5px;
+    height: 22.5px;
+    border-color: #000000;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-right: 5px;
+  }
+  
+  #miniTopcircle-one {
+    background-color: rgb(255, 0, 0);
+  }
+  
+  #miniTopcircle-dos {
+    background-color: rgb(255, 247, 0);
+  }
+  
+  #miniTopcircle-tres {
+    background-color: rgb(9, 255, 0);
+  }
+
+/* Llenar CCS-s del cuadro de 'imagen-habilidades'
+
+#imagen-habilidades {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+  }
+  
+  .imagen-habilidades img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+
+  } */
+
+#informacion-pokemon {
+  padding-top: 20px; /* Add padding to avoid content overlapping circles */
+  padding-bottom: 20px;
+}
